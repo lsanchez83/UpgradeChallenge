@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <parameter name="browser" value="chrome"/>
+  <test thread-count="5" name="Test(failed)">
+    <classes>
+      <class name="com.upgrade.setup.DriverInitializer">
+        <methods>
+          <include name="test"/>
+          <include name="seleniumWebDriver"/>
+          <include name="TestInitialize"/>
+          <include name="DirverClose"/>
+          <include name="webApi"/>
+        </methods>
+      </class> <!-- com.upgrade.setup.DriverInitializer -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
